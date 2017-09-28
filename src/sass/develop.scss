@@ -290,7 +290,7 @@ span{color: #df2c2c;}
         padding: 45px 0 50px;
     }
 }
-.section-pain{padding-top: 45px;
+.section-pain{padding-top: 45px;     padding-bottom: 90px;
     &__cols{display: flex; flex-direction: row; flex-wrap:wrap;}
     &__col{width: 50%;}
 }
@@ -307,6 +307,9 @@ span{color: #df2c2c;}
         text-transform: uppercase;
         letter-spacing: 12px;
         padding-bottom: 20px;
+        margin:0;
+    }
+    .item-box__title-line{
         &:before{
             content: '';
             position: absolute;
@@ -323,5 +326,31 @@ span{color: #df2c2c;}
         span{
             font-weight: bold;
         }
+    }
+}
+.section-functional{
+    position: relative;
+    background-color: #fafafa;
+    &:before{
+            content: "";
+    position: absolute;
+    top: -59px;
+    background-image: url(../images/section-func-fon.png);
+    height: 82px;
+    width: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    }
+    &__img{    position: absolute;  -webkit-box-shadow: 0px 3px 38px -1px rgba(112,112,112,1);
+-moz-box-shadow: 0px 3px 38px -1px rgba(112,112,112,1);
+box-shadow: 0px 3px 38px -1px rgba(112,112,112,1);    right: 50%;}
+    &__box{    padding-top: 58px;}
+    &__col5{width: 40%;}
+    &__row{display: flex; flex-direction: row;}
+    &__row1{justify-content: flex-end; padding-bottom: 110px;}
+    &__item{    padding: 20px 10px 0 5px;}
+    &__item-title{line-height: 50px;}
+    &__item-text{margin: 10px 0; font-size: 20px; line-height: 30px; padding: 0 35px; position: relative;
+        &:before{ content:''; position: absolute; left: 3px; top: 50%;transform: translateY(-50%); width: 2px; height: 83%; background-color: #ee2324;}
     }
 }
