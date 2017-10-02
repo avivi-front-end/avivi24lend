@@ -49,6 +49,7 @@ function slowScroll(id){
 }
 function slowVideo(){
     $('.js-open-video').on('click', function(e){
+        slowScroll(videoPlaceHolder);
         e.preventDefault();
         $('.section-report__img-wrap').addClass('open');
         setTimeout(function(){ 
