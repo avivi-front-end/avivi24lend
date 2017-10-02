@@ -5,6 +5,13 @@
     <div class="main">
         <img class="top-fon" src="./images/header-fon.png" alt="fon">
         <img class="top-left-fon" src="./images/header-fon-left.png" alt="fon">
+        <div class="video" id="videoPlaceHolder">
+            <div class="video__btn-wrap">
+                <button class="js-close-video video__btn-close"></button>
+            </div>
+            
+            <iframe  width="560" height="315" src="https://www.youtube.com/embed/r54u_O27RAA" frameborder="0" allowfullscreen></iframe>
+        </div>
         <div class="mbox">
         	<section class="section-report section">
              <div class="cols-wrap">
@@ -12,15 +19,16 @@
                      <h2 class="section-report__title ">Подробный отчет о работе команды в 3 клика</h2>
                      <p class="section-report__text"><span>Team Reporter</span> поможет Вам справиться с большими отчетами, сделает Вашу жизнь проще, солнце будет светить ярче а трава будет зеленее.</p>
                      <div class="section-report__btns">
-                         <a class="btn btn_grey btn_big" href="#">
+                         <a class="btn btn_grey btn_big js-open-video" href="#">
                         <span>Смотреть видео</span>
                         </a>
-                        <a class="btn btn_red btn_big" href="#">
+                        <a class="btn btn_red btn_big" data-fancybox href="javascript:;" data-src="#call-popup-form">
                             <span>Заказать</span>
                         </a>
                      </div>
                  </div>
                  <div class="col-right">
+
                     <div class="section-report__img-wrap">
                         <img src="../images/img-mac.png" class="section-report__img" alt="img">
                     </div>
@@ -71,7 +79,7 @@
             </section>
 
         </div>
-        <section class="section section-functional">
+        <section class="section section-functional" id="js-sec-func">
             <div class="mbox">
                 <h2 class="section__title">Функционал</h2>
                 <div class="section-functional__box section-functional__box_circle">
@@ -155,7 +163,7 @@
                 </div>
             </div>
         </section>
-        <section class="section section-reviews">
+        <section class="section section-reviews" id="js-func-rev">
             <div class="mbox">
                 <h2 class="section__title">Отзывы</h2>
                 <div class="slider slider-container js-slider-reviews">
@@ -235,7 +243,7 @@
                 <div class="slider__item-content-clone"></div>
             </div>
         </section>
-        <section class="section section-price">
+        <section class="section section-price" id="js-sec-price">
              <div class="mbox">
                 <h2 class="section__title section__title_while">Стоимость И Условия</h2>
                 <div class="section-price__box">
@@ -257,10 +265,10 @@
                     </div>
                 </div>
                 <div class="section-price__btns">
-                    <a class="btn btn_darken-green btn_big" href="#">
+                    <a class="btn btn_darken-green btn_big" data-fancybox href="javascript:;" data-src="#call-popup">
                         <span>консультация</span>
                     </a>
-                    <a class="btn btn_white btn_big" href="#">
+                    <a class="btn btn_white btn_big" data-fancybox href="javascript:;" data-src="#call-popup-form">
                         <span>Заказать</span>
                     </a>
                 </div>

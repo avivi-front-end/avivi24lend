@@ -152,5 +152,6 @@ function Maskedinput(){
 }
 $(document).ready(function(){
    validate('#call-popup .contact-form', {submitFunction:validationCall});
+   validate('#call-popup-form .contact-form', {submitFunction:validationCall});
    Maskedinput();
 });

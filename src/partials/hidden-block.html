@@ -1,15 +1,17 @@
 <div class="hidden-block">
 
-    <div id="call_success">
+    <div id="call_success" class="popup">
         <div class="call-success">
              <div class="call_success">
-                 <div class="call-title">Спасибо за заявку!</div>
-                 <div class="call-subtitle">Мы свяжемся с Вами в ближайшее время</div>
+                 <div class="call-title popup__title"><h5>Спасибо Вам, Барин!</h5></div>
+                 <div class="popup__form-row-wrap">
+                    <div class="call-subtitle popup__text ">Спасибо за покупку, уважаемый, дорогой! <br> Мы тебя развели на бабло! <br>Сейчас ты получишь битую ссыку на последнюю версию <a href="#">Angry Birds</a>.</div>
+                </div>
              </div>
         </div>
     </div>
 
-    <div id="call-popup" class="form-advice">
+    <div id="call-popup" class="form-advice popup">
         <form action="ajax.php" name="" class="contact-form ">
             <a href="#" class="btn_close"></a>
             <div class="timeman-block">
@@ -25,11 +27,11 @@
                     </div>
                 </div>
             </div>
-            <div class="contact-form-title">
+            <div class="contact-form-title popup__title">
                 <h5>Получить Консультацию</h5>
             </div>
-            <div class="contact-form-row-wrap">
-                <div class="contact-form-row cfix">
+            <div class="contact-form-row-wrap popup__form-row-wrap">
+                <div class="contact-form-row popup__form-row cfix">
                     <div class="contact-form-item">
                         <div class="contact-form-item-input form_row">
                             <div class="form_input">
@@ -79,12 +81,93 @@
                         </div>
                     </div> -->
                 </div>
-                <div class="contact-form-row cfix">
+                <div class="contact-form-row popup__form-row cfix">
                     <div class="contact-form-item-textarea form_row">
                         <textarea name="contact_coment" placeholder="Коментарий"></textarea>
                     </div>
                 </div>
-                <div class="contact-form-row contact-form-row_center cfix">
+                <div class="contact-form-row popup__form-row popup__form-row-center cfix">
+                    <div class="contact-form-item contact-form-item_center">
+                        <button type="submit" class="contact-submit btn btn_green btn_big">
+                            <span>Отправить</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div id="call-popup-form" class="popup">
+        <form action="ajax.php" name="" class="contact-form">
+            <a href="#" class="btn_close"></a>
+            <div class="timeman-block">
+                <div class="time-big">
+                    <span class="time-hours">13</span>
+                    <span class="time-semicolon">:</span>
+                    <span class="time-minutes">05</span>
+                </div>
+                <div class="timeman-right-side">
+                    <div class="timeman-info">2</div>
+                    <div class="timeman-beginning-but">
+                        <span>Работаю</span>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-form-title popup__title">
+                <h5>Для Покупки <span>Заполните форму</span></h5>
+            </div>
+            <div class="contact-form-row-wrap popup__form-row-wrap">
+                <div class="contact-form-row popup__form-row cfix">
+                    <div class="contact-form-item">
+                        <div class="contact-form-item-input form_row">
+                            <div class="form_input">
+                                <label class="form_input-inner">
+                                    <input type="text" name="contact_name" required="required" value="" >
+                                    <div class="form_input-text">Имя <span>*</span></div>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-form-item">
+                        <div class="contact-form-item-input form_row">
+                            <div class="form_input">
+                                <label class="form_input-inner">
+                                    <input type="text" name="contact_email" required="required" value="">
+                                    <div class="form_input-text">E-mail <span>*</span></div>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-form-item">
+                        <div class="contact-form-item-input form_row">
+                            <div class="form_input">
+                                <label class="form_input-inner">
+                                    <input type="text" name="contact_company" required="required" value="">
+                                    <div class="form_input-text">Название компании <span>*</span></div>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-form-item">
+                        <div class="contact-form-item-input form_row">
+                            <div class="form_input">
+                                <label class="form_input-inner">
+                                    <input type="text" name="contact_adress" required="required" value="">
+                                    <div class="form_input-text">Адрес портала <span>*</span></div>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                  <!--   <div class="contact-form-item">
+                        <div class="contact-form-item-input form_row">
+                            <div class="form_input">
+                                <input type="text" name="contact_tel" value="" required="required" placeholder="Ваш номер" class="tel-mask">
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
+
+                <div class="contact-form-row popup__form-row_center cfix">
                     <div class="contact-form-item contact-form-item_center">
                         <button type="submit" class="contact-submit btn btn_green btn_big">
                             <span>Отправить</span>
