@@ -336,7 +336,7 @@ span{color: #f0b1b1;}
     height: 100vh;}
     &.show{ opacity: 1; position: fixed; z-index: 1000;}
     &__btn-wrap{ position: absolute; right: 75px;  top: 13px; }
-    &__btn-close{position: relative;    border: none; border-radius: 50%; border: none; width: 22px; height: 22px; background: #e5e5e5;
+    &__btn-close{position: relative; display: block; -webkit-appearance: none;  border: none; border-radius: 50%; padding: 0; border: none; width: 22px; height: 22px; background: #e5e5e5;
         &:hover{background: #fff}}
     &__btn-close:before, &__btn-close:after{
         position: absolute;
@@ -853,7 +853,9 @@ span{color: #f0b1b1;}
     }
 }
 @media (max-width: 680px){
+
   .section-functional__row .section-functional__wrap-img{
+    top:0;
     width: 100%;
   }
   .section-report__btns{
@@ -1059,6 +1061,7 @@ span{color: #f0b1b1;}
   .top-left-fon{
     top: -142px;
   }
+  .video__btn-wrap{right: 90px;}
 }
 @media (max-width: 320px){
   .section-price{
