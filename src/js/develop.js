@@ -19,7 +19,7 @@ function slideActualInit() {
 	}
 	slider.on('afterChange', function(slick, currentSlide) {
 		$('.slider__item-content-clone').html('');
-	 $('.slider__item-wrap.slick-current').find('.slider__item-content').clone().appendTo('.slider__item-content-clone');
+	 	$('.slider__item-wrap.slick-current').find('.slider__item-content').clone().appendTo('.slider__item-content-clone');
 	})   
 }
 
@@ -51,7 +51,6 @@ function slowVideo(){
 }
 
 
-
 var tag = document.createElement('script');
 
 tag.src = "https://www.youtube.com/iframe_api";
@@ -69,16 +68,6 @@ function onYouTubeIframeAPIReady() {
 function onPlayerReady(event) {
 	event.target.playVideo();
 }
-// 5. The API calls this function when the player's state changes.
-//    The function indicates that when playing a video (state=1),
-//    the player should play for six seconds and then stop.
-// var done = false;
-// function onPlayerStateChange(event) {
-//   if (event.data == YT.PlayerState.PLAYING && !done) {
-//     setTimeout(stopVideo, 6000);
-//     done = true;
-//   }
-// }
 function stopVideo() {
 	player.stopVideo();
 }
@@ -93,21 +82,26 @@ function mobMenu(){
 	var btn = $('.js-menuBtn');
 	var boxMenu = $('.header__wrap-box-nav');
 	var link = $('.header__nav-link');
+	var layer = $('.js-layer');
 	btn.on('click', function(){
 		$(this).toggleClass('active');
 		boxMenu.toggleClass('active');
+		layer.toggleClass('active');
 	})
 	link.on('click', function(){
+		closeMenu();
+	})
+	layer.on('click', function(){
+		closeMenu();
+	})
+	function closeMenu(){
 		boxMenu.removeClass('active');
 		btn.removeClass('active');
-	})
+		layer.removeClass('active');
+	}
 }
 function sliderFunc(){
 	var slider = $('.js-slider-func');
-	// slider.on('init', function(slick, currentSlide) {
-	// 	$('.slider__item-content-clone').html('');
-	//  $('.slider__item-wrap.slick-current').find('.slider__item-content').clone().appendTo('.slider__item-content-clone');
-	// })
 	if(slider.length > 0){
 		slider.slick({
 			dots: false,
